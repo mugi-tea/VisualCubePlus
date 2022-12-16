@@ -36,7 +36,7 @@
                       100 / cubeState.pzl
                     )}%; height:${Math.floor(
                       100 / cubeState.pzl
-                    )}%; background-color:${facelet}; border: solid 1.5px black`"
+                    )}%; background-color:${facelet}; border: solid 1.5px black d-flex justify-content-center align-items-center`"
                     v-for="(facelet, index) in cubeState.fc[face].slice(
                       0,
                       cubeState.pzl ** 2
@@ -44,6 +44,7 @@
                     @click="
                       cubeState.arwTemp.startpoint = `${face.toUpperCase()}${index}`
                     "
+                    data-bs-dismiss="modal"
                   >
                     <div
                       class="faceletText"
@@ -96,6 +97,7 @@
                     @click="
                       cubeState.arwTemp.startpoint = `${face.toUpperCase()}${index}`
                     "
+                    data-bs-dismiss="modal"
                   >
                     <div
                       class="faceletText"

@@ -250,12 +250,11 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: center;
   align-items: center;
   height: 75%;
-  width: 80%;
+  width: 85%;
   opacity: 1;
-  background-color: lightgray;
+  background-color: white;
   border-radius: 20%;
   font-weight: bold;
-  font-size: xx-large;
   border: solid 3px black;
   box-shadow: 0 0 8px gray;
 }

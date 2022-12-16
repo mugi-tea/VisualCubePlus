@@ -32,9 +32,9 @@ export const ln = defineStore("ln", {
     choosePass: "Choose Pass",
     chooseEndpoint: "Choose Endpoint",
     skipPass: "Skip Pass",
-    s: "S",
-    p: "P",
-    e: "E",
+    s: "Start",
+    p: "Pass",
+    e: "End",
     arrowOptions: "Arrow Options",
     scale: "Scale",
     influence: "Influence",
@@ -106,9 +106,9 @@ export const ln = defineStore("ln", {
         this.choosePass = "Choose Pass";
         this.chooseEndpoint = "Choose Endpoint";
         this.skipPass = "Skip Pass";
-        this.s = "S";
-        this.p = "P";
-        this.e = "E";
+        this.s = "Start";
+        this.p = "Pass";
+        this.e = "End";
         this.arrowOptions = "Arrow Options";
         this.scale = "scale";
         this.influence = "Influence";
@@ -178,9 +178,9 @@ export const ln = defineStore("ln", {
         this.choosePass = "パスの選択";
         this.chooseEndpoint = "エンドポイントの選択";
         this.skipPass = "パスをスキップ";
-        this.s = "始";
-        this.p = "通";
-        this.e = "終";
+        this.s = "始点";
+        this.p = "通過点";
+        this.e = "終点";
         this.arrowOptions = "オプション";
         this.scale = "サイズ";
         this.influence = "曲がり具合";
