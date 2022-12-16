@@ -15,7 +15,10 @@
       data-bs-interval="false"
       data-bs-touch="false"
     >
-      <div class="carouselButtons d-flex justify-content-evenly">
+      <div
+        class="carouselButtons d-flex justify-content-evenly"
+        style="width: 99.8%"
+      >
         <button
           :class="{ sectionSelectButton: true, active: isActive1 }"
           type="button"
