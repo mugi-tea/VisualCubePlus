@@ -17,7 +17,7 @@
     >
       <div
         class="carouselButtons d-flex justify-content-evenly"
-        style="width: 99.8%"
+        style="width: 90%"
       >
         <button
           :class="{ sectionSelectButton: true, active: isActive1 }"
