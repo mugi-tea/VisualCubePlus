@@ -15,7 +15,10 @@
       data-bs-interval="false"
       data-bs-touch="false"
     >
-      <div class="carouselButtons d-flex justify-content-center">
+      <div
+        class="carouselButtons d-flex justify-content-center"
+        style="width: 100%"
+      >
         <button
           :class="{ sectionSelectButton: true, active: isActive1 }"
           type="button"
@@ -24,6 +27,7 @@
           aria-current="true"
           aria-label="fd"
           @click="active1"
+          style="width: 25%"
         >
           <h6>{{ ln.faceletDefinition }}</h6>
         </button>
@@ -34,6 +38,7 @@
           data-bs-slide-to="1"
           aria-label="fc"
           @click="active2"
+          style="width: 25%"
         >
           <h6>{{ ln.faceletColors }}</h6>
         </button>
@@ -44,6 +49,7 @@
           data-bs-slide-to="2"
           aria-label="sch"
           @click="active3"
+          style="width: 25%"
         >
           <h6>{{ ln.scheme }}</h6>
         </button>
@@ -54,6 +60,7 @@
           data-bs-slide-to="3"
           aria-label="sch"
           @click="active4"
+          style="width: 25%"
         >
           <h6>{{ ln.color }}</h6>
         </button>
