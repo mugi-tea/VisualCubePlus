@@ -145,6 +145,80 @@ export default {
       cubeState: cubeState(),
       ln: ln(),
       faces: ["u", "l", "f", "r", "b", "d"],
+      colors: [
+        {
+          label: "Black",
+          value: "#000000",
+          color: "#000000",
+          fontColor: "white",
+        },
+        {
+          label: "Dark Grey",
+          value: "#404040",
+          color: "#404040",
+          fontColor: "white",
+        },
+        {
+          label: "Grey",
+          value: "#808080",
+          color: "#808080",
+          fontColor: "black",
+        },
+        {
+          label: "Silver",
+          value: "#bfbfbf",
+          color: "#bfbfbf",
+          fontColor: "black",
+        },
+        {
+          label: "White",
+          value: "#ffffff",
+          color: "#ffffff",
+          fontColor: "black",
+        },
+        {
+          label: "Yellow",
+          value: "#ffff00",
+          color: "#ffff00",
+          fontColor: "black",
+        },
+        {
+          label: "Red",
+          value: "#ff0000",
+          color: "#ff0000",
+          fontColor: "black",
+        },
+        {
+          label: "Orange",
+          value: "#ffa100",
+          color: "#ffa100",
+          fontColor: "black",
+        },
+        {
+          label: "Blue",
+          value: "#0000f3",
+          color: "#0000f3",
+          fontColor: "black",
+        },
+        {
+          label: "Green",
+          value: "#00d800",
+          color: "#00d800",
+          fontColor: "black",
+        },
+        {
+          label: "Purple",
+          value: "#a83dd9",
+          color: "#a83dd9",
+          fontColor: "black",
+        },
+        {
+          label: "Pink",
+          value: "#f33d7b",
+          color: "#f33d7b",
+          fontColor: "black",
+        },
+      ],
     };
   },
 };
