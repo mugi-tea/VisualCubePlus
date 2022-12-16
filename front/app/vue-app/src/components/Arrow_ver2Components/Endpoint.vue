@@ -1,17 +1,15 @@
 <template>
   <div
     class="modal fade"
-    :id="`${face}FaceStartpointModal`"
+    :id="`${face}FaceEndpointModal`"
     tabindex="-1"
-    :aria-labelledby="`${face}FaceStartpointModalLabel`"
+    :aria-labelledby="`${face}FaceEndpointModalLabel`"
     aria-hidden="true"
   >
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" :id="`${face}FaceStartpointModal`">
-            Startpoint
-          </h5>
+          <h5 class="modal-title" :id="`${face}FaceEndpointModal`">Endpoint</h5>
           <button
             type="button"
             class="btn-close"
@@ -22,7 +20,7 @@
         <div class="modal-body">
           <div class="container row">
             <div class="arrowFacePreview col-lg-8 col-sm-12">
-              <h6>Choose Facelet that the arrow starts from.</h6>
+              <h6>Choose Facelet that the arrow ends.</h6>
               <div class="arrowFacelet d-flex justify-content-center">
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"
@@ -30,23 +28,23 @@
                   style="height: 30vw; width: 30vw; background-color: black"
                 >
                   <button
-                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton  d-flex justify-content-center align-items-center`"
+                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton d-flex justify-content-center align-items-center`"
                     :key="`arrowUFacelet${index}`"
                     :style="`width:${Math.floor(
                       100 / cubeState.pzl
                     )}%; height:${Math.floor(
                       100 / cubeState.pzl
-                    )}%; background-color:${facelet}; border: solid 1.5px black`"
+                    )}%; background-color:${facelet}; border: solid 1.5px black `"
                     v-for="(facelet, index) in cubeState.fc[face].slice(
                       0,
                       cubeState.pzl ** 2
                     )"
                     @click="
-                      cubeState.arwTemp.startpoint = `${face.toUpperCase()}${index}`
+                      cubeState.arwTemp.endpoint = `${face.toUpperCase()}${index}`
                     "
                     data-bs-dismiss="modal"
                     data-bs-toggle="modal"
-                    :data-bs-target="`#${face}FacePassModal`"
+                    :data-bs-target="`#${face}FaceConfirmationModal`"
                   >
                     <div
                       class="faceletText"
@@ -97,11 +95,11 @@
                       cubeState.pzl ** 2
                     )"
                     @click="
-                      cubeState.arwTemp.startpoint = `${face.toUpperCase()}${index}`
+                      cubeState.arwTemp.endpoint = `${face.toUpperCase()}${index}`
                     "
                     data-bs-dismiss="modal"
                     data-bs-toggle="modal"
-                    :data-bs-target="`#${face}FacePassModal`"
+                    :data-bs-target="`#${face}FaceConfirmationModal`"
                   >
                     <div
                       class="faceletText"
@@ -145,21 +143,19 @@
             class="button-secondly"
             type="button"
             data-bs-dismiss="modal"
-            :data-bs-target="`#${face}FacePassModal`"
+            :data-bs-target="`#${face}FaceStartpointModal`"
             data-bs-toggle="modal"
-            v-if="cubeState.arwTemp.startpoint != ''"
           >
-            {{ ln.choosePass }}
+            {{ ln.chooseStartpoint }}
           </button>
           <button
             class="button-secondly"
             type="button"
             data-bs-dismiss="modal"
-            :data-bs-target="`#${face}FaceEndpointModal`"
+            :data-bs-target="`#${face}FacePassModal`"
             data-bs-toggle="modal"
-            v-if="cubeState.arwTemp.startpoint != ''"
           >
-            {{ ln.chooseEndpoint }}
+            {{ ln.choosePass }}
           </button>
           <button
             class="button-primary"
@@ -169,7 +165,7 @@
               cubeState.arwTemp.startpoint != '' &&
               cubeState.arwTemp.endpoint != ''
             "
-            @click="cubeState.addArrow()"
+            @click="cubeState.addArrow(cubeState.arw.length)"
           >
             {{ ln.add }}
           </button>

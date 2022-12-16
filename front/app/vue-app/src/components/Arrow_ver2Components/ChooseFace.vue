@@ -26,7 +26,7 @@
 
                 <!--arrowUButton-->
                 <button
-                  class="arrowFace arrowUFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowUFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-if="faceletDefinitionOption()"
                   type="button"
                   data-bs-toggle="modal"
@@ -48,7 +48,7 @@
                   ></div>
                 </button>
                 <button
-                  class="arrowFace arrowUFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowUFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-else
                   type="button"
                   data-bs-toggle="modal"
@@ -78,7 +78,7 @@
               <div class="d-flex">
                 <!--arrowLButton-->
                 <button
-                  class="arrowFace arrowLFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowLFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-if="faceletDefinitionOption()"
                   type="button"
                   data-bs-toggle="modal"
@@ -100,7 +100,7 @@
                   ></div>
                 </button>
                 <button
-                  class="arrowFace arrowLFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowLFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-else
                   type="button"
                   data-bs-toggle="modal"
@@ -126,7 +126,7 @@
 
                 <!--arrowFButton-->
                 <button
-                  class="arrowFace arrowLFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowLFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-if="faceletDefinitionOption()"
                   type="button"
                   data-bs-toggle="modal"
@@ -148,7 +148,7 @@
                   ></div>
                 </button>
                 <button
-                  class="arrowFace arrowFFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowFFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-else
                   type="button"
                   data-bs-toggle="modal"
@@ -173,7 +173,7 @@
                 </button>
                 <!--arrowRButton-->
                 <button
-                  class="arrowFace arrowRFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowRFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-if="faceletDefinitionOption()"
                   type="button"
                   data-bs-toggle="modal"
@@ -195,7 +195,7 @@
                   ></div>
                 </button>
                 <button
-                  class="arrowFace arrowRFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowRFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-else
                   type="button"
                   data-bs-toggle="modal"
@@ -221,7 +221,7 @@
 
                 <!--arrowBButton-->
                 <button
-                  class="arrowFace arrowBFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowBFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-if="faceletDefinitionOption()"
                   type="button"
                   data-bs-toggle="modal"
@@ -243,7 +243,7 @@
                   ></div>
                 </button>
                 <button
-                  class="arrowFace arrowBFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowBFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-else
                   type="button"
                   data-bs-toggle="modal"
@@ -271,7 +271,7 @@
                 <div class="arrowEmptyFace arrowFace"></div>
                 <!--arrowDButton-->
                 <button
-                  class="arrowFace arrowDFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowDFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-if="faceletDefinitionOption()"
                   type="button"
                   data-bs-toggle="modal"
@@ -293,7 +293,7 @@
                   ></div>
                 </button>
                 <button
-                  class="arrowFace arrowDFace notEmptyFace d-flex flex-wrap justify-content-center align-items-center"
+                  class="arrowFace arrowDFace notEmptyFace d-flex flex-wrap justify-content-evenly align-items-center"
                   v-else
                   type="button"
                   data-bs-toggle="modal"
