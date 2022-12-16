@@ -27,10 +27,9 @@
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"
                   v-if="faceletDefinitionOption()"
-                  style="height: 30vw; width: 30vw; background-color: black"
                 >
                   <button
-                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton  d-flex justify-content-center align-items-center`"
+                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton d-flex justify-content-center align-items-center`"
                     :key="`arrowUFacelet${index}`"
                     :style="`width:${Math.floor(
                       100 / cubeState.pzl
@@ -80,7 +79,6 @@
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"
                   v-else
-                  style="height: 30vw; width: 30vw; background-color: black"
                 >
                   <button
                     :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton d-flex justify-content-center align-items-center`"
@@ -226,10 +224,23 @@ export default {
 </script>
 
 <style>
+.arrowFaceletButtons {
+  height: 20vw;
+  width: 20vw;
+  background-color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .arrowFaceletButtons {
+    height: 40vw !important;
+    width: 40vw !important;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .arrowFaceletButtons {
-    height: 60vw !important;
-    width: 60vw !important;
+    height: 50vw !important;
+    width: 50vw !important;
   }
 }
 </style>

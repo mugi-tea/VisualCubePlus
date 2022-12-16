@@ -25,16 +25,15 @@
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"
                   v-if="faceletDefinitionOption()"
-                  style="height: 30vw; width: 30vw; background-color: black"
                 >
                   <button
-                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton justify-content-center align-items-center`"
+                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton d-flex justify-content-center align-items-center`"
                     :key="`arrowUFacelet${index}`"
                     :style="`width:${Math.floor(
                       100 / cubeState.pzl
                     )}%; height:${Math.floor(
                       100 / cubeState.pzl
-                    )}%; background-color:${facelet}; border: solid 1.5px black d-flex`"
+                    )}%; background-color:${facelet}; border: solid 1.5px black`"
                     v-for="(facelet, index) in cubeState.fc[face].slice(
                       0,
                       cubeState.pzl ** 2
@@ -78,7 +77,6 @@
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"
                   v-else
-                  style="height: 30vw; width: 30vw; background-color: black"
                 >
                   <button
                     :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton d-flex justify-content-center align-items-center`"

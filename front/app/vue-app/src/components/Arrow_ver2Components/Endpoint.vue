@@ -25,7 +25,6 @@
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"
                   v-if="faceletDefinitionOption()"
-                  style="height: 30vw; width: 30vw; background-color: black"
                 >
                   <button
                     :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton d-flex justify-content-center align-items-center`"
@@ -78,7 +77,6 @@
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"
                   v-else
-                  style="height: 30vw; width: 30vw; background-color: black"
                 >
                   <button
                     :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton d-flex justify-content-center align-items-center`"
