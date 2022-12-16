@@ -1,0 +1,15 @@
+version: "3"
+services:
+  front:
+    container_name: front
+    build: ./app
+    ports:
+      - "8080:80"
+    environment:
+      VIRTUAL_HOST: visualcubeplus.com
+      LETSENCRYPT_HOST: visualcubeplus.com
+
+networks:
+  default:
+    external:
+      name: visualcubeplus_ssl_network
