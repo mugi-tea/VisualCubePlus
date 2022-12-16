@@ -44,7 +44,35 @@
                     @click="
                       cubeState.arwTemp.startpoint = `${face.toUpperCase()}${index}`
                     "
-                  ></button>
+                  >
+                    <div
+                      class="faceletText"
+                      v-if="
+                        `${face.toUpperCase()}${index}` ==
+                        this.cubeState.arwTemp.startpoint
+                      "
+                    >
+                      {{ ln.s }}
+                    </div>
+                    <div
+                      class="faceletText"
+                      v-if="
+                        `${face.toUpperCase()}${index}` ==
+                        this.cubeState.arwTemp.pass
+                      "
+                    >
+                      {{ ln.p }}
+                    </div>
+                    <div
+                      class="faceletText"
+                      v-if="
+                        `${face.toUpperCase()}${index}` ==
+                        this.cubeState.arwTemp.endpoint
+                      "
+                    >
+                      {{ ln.e }}
+                    </div>
+                  </button>
                 </div>
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-center align-items-center"
@@ -52,7 +80,7 @@
                   style="height: 30vw; width: 30vw; background-color: black"
                 >
                   <button
-                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton`"
+                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton d-flex justify-content-center align-items-center`"
                     :key="`arrowUFacelet${index}`"
                     :style="`width:${Math.floor(
                       100 / cubeState.pzl
@@ -68,7 +96,35 @@
                     @click="
                       cubeState.arwTemp.startpoint = `${face.toUpperCase()}${index}`
                     "
-                  ></button>
+                  >
+                    <div
+                      class="faceletText"
+                      v-if="
+                        `${face.toUpperCase()}${index}` ==
+                        this.cubeState.arwTemp.startpoint
+                      "
+                    >
+                      {{ ln.s }}
+                    </div>
+                    <div
+                      class="faceletText"
+                      v-if="
+                        `${face.toUpperCase()}${index}` ==
+                        this.cubeState.arwTemp.pass
+                      "
+                    >
+                      {{ ln.p }}
+                    </div>
+                    <div
+                      class="faceletText"
+                      v-if="
+                        `${face.toUpperCase()}${index}` ==
+                        this.cubeState.arwTemp.endpoint
+                      "
+                    >
+                      {{ ln.e }}
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>

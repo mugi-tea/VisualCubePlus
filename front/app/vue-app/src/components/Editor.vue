@@ -252,9 +252,11 @@ input[type="range"]::-webkit-slider-thumb {
   height: 80%;
   width: 80%;
   opacity: 1;
-  background-color: white;
-  border-radius: 50%;
+  background-color: lightgray;
+  border-radius: 20%;
   font-weight: bold;
-  border: solid 1px v-bind("themeColor.color");
+  font-size: xx-large;
+  border: solid 3px black;
+  box-shadow: 0 0 8px gray;
 }
 </style>
