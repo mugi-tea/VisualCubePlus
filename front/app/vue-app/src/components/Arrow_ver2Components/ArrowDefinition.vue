@@ -108,13 +108,20 @@
         </button>
       </div>
     </div>
+    <ChooseFace />
+    <Startpoint
+      :face="face"
+      v-for="face in faces"
+      :key="`${face}FaceStartpoint`"
+    />
+    <Pass :face="face" v-for="face in faces" :key="`${face}FacePass`" />
+    <Endpoint :face="face" v-for="face in faces" :key="`${face}FaceEndpoint`" />
+    <Confirmation
+      :face="face"
+      v-for="face in faces"
+      :key="`${face}FaceConfirmation`"
+    />
   </div>
-  <ChooseFace />
-  <Startpoint
-    :face="face"
-    v-for="face in faces"
-    :key="`${face}FaceStartpoint`"
-  />
 </template>
 
 <script>
@@ -122,10 +129,16 @@ import { cubeState } from "../Stores/CubeState";
 import { ln } from "../Stores/Language";
 import ChooseFace from "./ChooseFace.vue";
 import Startpoint from "./Startpoint.vue";
+import Pass from "./Pass.vue";
+import Endpoint from "./Endpoint.vue";
+import Confirmation from "./Confirmation.vue";
 export default {
   components: {
     ChooseFace,
     Startpoint,
+    Pass,
+    Endpoint,
+    Confirmation,
   },
   data() {
     return {

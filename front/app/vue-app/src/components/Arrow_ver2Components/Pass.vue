@@ -1,17 +1,15 @@
 <template>
   <div
     class="modal fade"
-    :id="`${face}FaceStartpointModal`"
+    :id="`${face}FacePassModal`"
     tabindex="-1"
-    :aria-labelledby="`${face}FaceStartpointModalLabel`"
+    :aria-labelledby="`${face}FacePassModalLabel`"
     aria-hidden="true"
   >
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" :id="`${face}FaceStartpointModal`">
-            Startpoint
-          </h5>
+          <h5 class="modal-title" :id="`${face}FacePassModal`">Pass</h5>
           <button
             type="button"
             class="btn-close"
@@ -22,7 +20,7 @@
         <div class="modal-body">
           <div class="container row">
             <div class="arrowFacePreview col-lg-8 col-sm-12">
-              <h6>Choose Facelet that the arrow starts from.</h6>
+              <h6>Choose facelet that the arrow passes.</h6>
               <div class="arrowFacelet d-flex justify-content-center">
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"
@@ -30,23 +28,23 @@
                   style="height: 30vw; width: 30vw; background-color: black"
                 >
                   <button
-                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton  d-flex justify-content-center align-items-center`"
+                    :class="`arrow${face.toUpperCase()}FaceletButton arrowFaceletButton justify-content-center align-items-center`"
                     :key="`arrowUFacelet${index}`"
                     :style="`width:${Math.floor(
                       100 / cubeState.pzl
                     )}%; height:${Math.floor(
                       100 / cubeState.pzl
-                    )}%; background-color:${facelet}; border: solid 1.5px black`"
+                    )}%; background-color:${facelet}; border: solid 1.5px black d-flex`"
                     v-for="(facelet, index) in cubeState.fc[face].slice(
                       0,
                       cubeState.pzl ** 2
                     )"
                     @click="
-                      cubeState.arwTemp.startpoint = `${face.toUpperCase()}${index}`
+                      cubeState.arwTemp.pass = `${face.toUpperCase()}${index}`
                     "
                     data-bs-dismiss="modal"
                     data-bs-toggle="modal"
-                    :data-bs-target="`#${face}FacePassModal`"
+                    :data-bs-target="`#${face}FaceEndpointModal`"
                   >
                     <div
                       class="faceletText"
@@ -97,11 +95,11 @@
                       cubeState.pzl ** 2
                     )"
                     @click="
-                      cubeState.arwTemp.startpoint = `${face.toUpperCase()}${index}`
+                      cubeState.arwTemp.pass = `${face.toUpperCase()}${index}`
                     "
                     data-bs-dismiss="modal"
                     data-bs-toggle="modal"
-                    :data-bs-target="`#${face}FacePassModal`"
+                    :data-bs-target="`#${face}FaceEndpointModal`"
                   >
                     <div
                       class="faceletText"
@@ -145,11 +143,10 @@
             class="button-secondly"
             type="button"
             data-bs-dismiss="modal"
-            :data-bs-target="`#${face}FacePassModal`"
+            :data-bs-target="`#${face}FaceStartpointModal`"
             data-bs-toggle="modal"
-            v-if="cubeState.arwTemp.startpoint != ''"
           >
-            {{ ln.choosePass }}
+            {{ ln.chooseStartpoint }}
           </button>
           <button
             class="button-secondly"
@@ -157,7 +154,17 @@
             data-bs-dismiss="modal"
             :data-bs-target="`#${face}FaceEndpointModal`"
             data-bs-toggle="modal"
-            v-if="cubeState.arwTemp.startpoint != ''"
+            @click="cubeState.arwTemp.pass = ''"
+          >
+            {{ ln.skipPass }}
+          </button>
+          <button
+            class="button-secondly"
+            type="button"
+            data-bs-dismiss="modal"
+            :data-bs-target="`#${face}FaceEndpointModal`"
+            data-bs-toggle="modal"
+            v-if="cubeState.arwTemp.endpoint != ''"
           >
             {{ ln.chooseEndpoint }}
           </button>
@@ -169,7 +176,7 @@
               cubeState.arwTemp.startpoint != '' &&
               cubeState.arwTemp.endpoint != ''
             "
-            @click="cubeState.addArrow()"
+            @click="cubeState.addArrow(cubeState.arw.length)"
           >
             {{ ln.add }}
           </button>
@@ -225,11 +232,4 @@ export default {
 };
 </script>
 
-<style>
-@media screen and (max-width: 575px) {
-  .arrowFaceletButtons {
-    height: 60vw !important;
-    width: 60vw !important;
-  }
-}
-</style>
+<style></style>
