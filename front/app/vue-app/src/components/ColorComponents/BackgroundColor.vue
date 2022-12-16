@@ -2,7 +2,10 @@
   <div class="backgroundColor">
     <h6 class="carouselTitle">{{ ln.backgroundColor }}</h6>
     <div class="backgroundColorEdit d-flex flex-column gap-1">
-      <div class="colorButtons btn-group d-flex flex-row" role="group">
+      <div
+        class="colorButtons btn-group d-flex flex-rown overflow-auto"
+        role="group"
+      >
         <button
           :class="`inputColor${color.label} btn `"
           v-for="color in colors"
