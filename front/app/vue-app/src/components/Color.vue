@@ -21,6 +21,7 @@
       >
         <button
           :class="{ sectionSelectButton: true, active: isActive1 }"
+          class="d-flex justify-content-center align-items-center"
           type="button"
           data-bs-target="#colorCarousel"
           data-bs-slide-to="0"
@@ -33,6 +34,7 @@
         </button>
         <button
           :class="{ sectionSelectButton: true, active: isActive2 }"
+          class="d-flex justify-content-center align-items-center"
           type="button"
           data-bs-target="#colorCarousel"
           data-bs-slide-to="1"
@@ -44,6 +46,7 @@
         </button>
         <button
           :class="{ sectionSelectButton: true, active: isActive3 }"
+          class="d-flex justify-content-center align-items-center"
           type="button"
           data-bs-target="#colorCarousel"
           data-bs-slide-to="2"
@@ -55,6 +58,7 @@
         </button>
         <button
           :class="{ sectionSelectButton: true, active: isActive4 }"
+          class="d-flex justify-content-center align-items-center"
           type="button"
           data-bs-target="#colorCarousel"
           data-bs-slide-to="3"
