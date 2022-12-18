@@ -107,6 +107,16 @@
         <div class="btn-group" role="group">
           <button
             type="button"
+            class="spaceButton btn button-secondly"
+            @click="cubeState.case = cubeState.case + ' '"
+          >
+            Space
+          </button>
+        </div>
+
+        <div class="btn-group" role="group">
+          <button
+            type="button"
             class="ollModalButton btn button-secondly"
             data-bs-toggle="modal"
             data-bs-target="#ollCaseModal"
@@ -171,10 +181,10 @@
               <div class="modal-footer">
                 <button
                   type="button"
-                  class="closeButton"
+                  class="closeButton button-primary"
                   data-bs-dismiss="modal"
                 >
-                  Close
+                  {{ ln.close }}
                 </button>
               </div>
             </div>
@@ -227,10 +237,10 @@
               <div class="modal-footer">
                 <button
                   type="button"
-                  class="closeButton"
+                  class="closeButton button-primary"
                   data-bs-dismiss="modal"
                 >
-                  Close
+                  {{ ln.close }}
                 </button>
               </div>
             </div>

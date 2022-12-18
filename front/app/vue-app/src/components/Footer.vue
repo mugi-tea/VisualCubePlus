@@ -1,23 +1,21 @@
 <template>
   <footer>
     <div
-      class="container d-flex flex-column justify-content-between gap-1 py-3"
+      class="container d-flex flex-column justify-content-between gap-2 py-2"
     >
       <div class="d-flex justify-content-center text-white">
         Visual Cube Plus ver4.0.0
       </div>
       <div class="d-flex justify-content-center aling-items-center gap-2">
         <button
-          class="languageJapanese"
+          class="languageButton languageJapanese"
           @click="ln.changeLanguage('jp')"
-          :style="`background-color: white; border: 2px solid ${themeColor.color};border-radius:5px`"
         >
           <span class="flag-icon flag-icon-jp"></span>
         </button>
         <button
-          class="languageEnglish"
+          class="languageButton languageEnglish"
           @click="ln.changeLanguage('en')"
-          :style="`background-color: white; border: 2px solid ${themeColor.color}; border-radius:5px`"
         >
           <span class="flag-icon flag-icon-us"></span>
         </button>
@@ -43,5 +41,11 @@ export default {
 <style>
 footer {
   background-color: v-bind("themeColor.color");
+}
+
+.languageButton {
+  background-color: rgba(255, 255, 255, 0.352);
+  border: 2px solid v-bind("themeColor.color");
+  border-radius: 5px;
 }
 </style>
