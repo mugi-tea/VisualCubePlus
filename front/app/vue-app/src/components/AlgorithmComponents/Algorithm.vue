@@ -9,22 +9,21 @@
           class="flex-grow-1"
           style="border-radius: 7px 0px 0px 7px !important"
         />
-        <div class="deleteButtons">
-          <button
-            class="delete button-primary"
-            @click="cubeState.alg = cubeState.alg.slice(0, -1)"
-            style="border-radius: 0px"
-          >
-            <i class="bx bx-chevron-left"></i>
-          </button>
-          <button
-            class="deteleAll button-primary"
-            @click="cubeState.alg = ''"
-            style="border-radius: 0px 7px 7px 0px !important"
-          >
-            <i class="bx bx-chevrons-left"></i>
-          </button>
-        </div>
+
+        <button
+          class="delete button-primary"
+          @click="cubeState.alg = cubeState.alg.slice(0, -1)"
+          style="border-radius: 0px"
+        >
+          <i class="bx bx-chevron-left"></i>
+        </button>
+        <button
+          class="deteleAll button-primary"
+          @click="cubeState.alg = ''"
+          style="border-radius: 0px 7px 7px 0px !important"
+        >
+          <i class="bx bx-chevrons-left"></i>
+        </button>
       </div>
 
       <div
