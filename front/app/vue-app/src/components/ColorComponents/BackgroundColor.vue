@@ -53,7 +53,7 @@ export default {
         { label: "G", value: "#00d800", color: "#00d800", fontColor: "black" },
         { label: "M", value: "#a83dd9", color: "#a83dd9", fontColor: "black" },
         { label: "P", value: "#f33d7b", color: "#f33d7b", fontColor: "black" },
-        { label: "Trans", value: "#t", color: "#ffffff", fontColor: "black" },
+        //{ label: "Trans", value: "#t", color: "#ffffff", fontColor: "black" },
       ],
     };
   },
