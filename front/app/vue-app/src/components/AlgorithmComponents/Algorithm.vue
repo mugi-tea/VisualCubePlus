@@ -168,10 +168,10 @@
                       data-bs-dismiss="modal"
                       :style="`border: 2px solid ${themeColor.color}; border-radius: 5px`"
                     >
-                      <h6 class="ollLabel text-black">{{ ollAlg.label }}</h6>
+                      <h6 class="ollLabel">{{ ollAlg.label }}</h6>
                       <div class="ollImg">
                         <img
-                          :src="`/img/oll/OLL54.svg`"
+                          :src="`/img/oll/${ollAlg.label}.svg`"
                           style="height: 120px"
                         />
                       </div>
@@ -226,7 +226,7 @@
                       data-bs-dismiss="modal"
                       :style="`border: 2px solid ${themeColor.color}; border-radius: 5px`"
                     >
-                      <h6 class="pllLabel text-black">{{ pllAlg.label }}</h6>
+                      <h6 class="pllLabel">{{ pllAlg.label }}</h6>
                       <div class="pllImg">
                         <img
                           :src="`/img/pll/${pllAlg.label}.svg`"
@@ -584,4 +584,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.ollLabel {
+  color: black !important;
+}
+.pllLabe {
+  color: black !important;
+}
+</style>
