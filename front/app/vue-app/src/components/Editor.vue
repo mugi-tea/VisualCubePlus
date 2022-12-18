@@ -255,6 +255,7 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: white;
   border-radius: 20%;
   font-weight: bold;
+  color: black;
   border: solid 3px black;
   box-shadow: 0 0 8px gray;
 }
