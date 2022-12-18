@@ -175,7 +175,7 @@
                         v-for="(color, index) in colors"
                         :key="`facelet${face}${index}`"
                         class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color: ${color.color}; height:70px; width:70px; color:${color.fontColor}; border:black 2px solid; border-radius: 10px; color:black;`"
+                        :style="`background-color: ${color.color}; height:70px; width:70px; color:${color.fontColor}; border:black 2px solid; border-radius: 10px`"
                         @click="selectedColor = color.value"
                       >
                         {{ color.label }}
