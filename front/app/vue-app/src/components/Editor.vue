@@ -246,25 +246,5 @@ input[type="range"]::-webkit-slider-thumb {
 
 /*arwのfaceletのやつ*/
 .faceletText {
-  display: flex;
-  font-size: 1rem;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-  padding: 5px;
-  margin: 0;
-  opacity: 1;
-  background-color: white;
-  border-radius: 20px;
-  font-weight: bold;
-  color: black;
-  border: solid 2px black;
-  box-shadow: 0 0 8px gray;
-}
-
-@media screen and (max-width: 992px) {
-  .faceletText {
-    font-size: 12px;
-  }
 }
 </style>
