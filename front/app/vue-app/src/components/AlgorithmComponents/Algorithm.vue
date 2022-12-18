@@ -171,7 +171,7 @@
                       <h6 class="ollLabel text-black">{{ ollAlg.label }}</h6>
                       <div class="ollImg">
                         <img
-                          :src="`/img/oll/${ollAlg.label}.svg`"
+                          :src="`/img/oll/OLL54.svg`"
                           style="height: 120px"
                         />
                       </div>
