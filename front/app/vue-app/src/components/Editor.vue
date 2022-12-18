@@ -249,9 +249,10 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex;
   font-size: 1rem;
   justify-content: center;
-  width: 200%;
+  width: 100%;
   align-items: center;
-  padding: 5px;
+  padding: 0;
+  margin: 0;
   opacity: 1;
   background-color: white;
   border-radius: 20px;
@@ -259,5 +260,11 @@ input[type="range"]::-webkit-slider-thumb {
   color: black;
   border: solid 3px black;
   box-shadow: 0 0 8px gray;
+}
+
+@media screen and (max-width: 992px) {
+  .faceletText {
+    font-size: 15px;
+  }
 }
 </style>
