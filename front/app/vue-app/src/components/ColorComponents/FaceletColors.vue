@@ -172,27 +172,29 @@
                     <div
                       class="selectColorButtons d-flex justify-content-start flex-wrap"
                     >
-                      <button
-                        v-for="(color, index) in colors"
-                        :key="`facelet${face}${index}`"
-                        class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color: ${color.color}; height:70px; width:70px; color:${color.fontColor}; border:black 2px solid; border-radius: 10px; color:black;`"
-                        @click="selectedColor = color.value"
-                      >
-                        {{ color.label }}
-                      </button>
-                      <input
-                        type="color"
-                        v-model="selectedColor"
-                        style="
-                          margin-top: 4px;
-                          height: 70px;
-                          width: 70px;
-                          border: black 2px solid !important;
-                          border-radius: 10px !important;
-                          color: black;
-                        "
-                      />
+                      <div class="d-flex justify-content-center">
+                        <button
+                          v-for="(color, index) in colors"
+                          :key="`facelet${face}${index}`"
+                          class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
+                          :style="`background-color: ${color.color}; height:70px; width:70px; color:${color.fontColor}; border:black 2px solid; border-radius: 10px; color:black;`"
+                          @click="selectedColor = color.value"
+                        >
+                          {{ color.label }}
+                        </button>
+                        <input
+                          type="color"
+                          v-model="selectedColor"
+                          style="
+                            margin-top: 4px;
+                            height: 70px;
+                            width: 70px;
+                            border: black 2px solid !important;
+                            border-radius: 10px !important;
+                            color: black;
+                          "
+                        />
+                      </div>
                     </div>
                   </div>
                   <div class="selectedColor">

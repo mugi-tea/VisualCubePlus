@@ -182,39 +182,41 @@
                 <div class="col-lg-4 col-sm-12">
                   <div class="fdColorOptions">
                     <h5>{{ ln.colorOptions }}</h5>
-                    <div
-                      class="selectColorButtons d-flex justify-content-start flex-wrap"
-                    >
-                      <button
-                        v-for="face in faces"
-                        :key="`facelet${face}`"
-                        class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color:${cubeState.sch[face]}; height:70px; width:70px; border:2px solid black; border-radius:10px; color:black`"
-                        @click="selectedFace = face"
+                    <div class="d-flex justify-content-center">
+                      <div
+                        class="selectColorButtons d-flex justify-content-start flex-wrap"
                       >
-                        {{ face.toUpperCase() }}
-                      </button>
-                      <button
-                        class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color:${cubeState.sch['n']}; height:70px; width:70px; border: 2px solid black; border-radius:10px; color:white`"
-                        @click="selectedFace = 'n'"
-                      >
-                        N
-                      </button>
-                      <button
-                        class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color:${cubeState.sch['o']}; height:70px; width:70px; border:2px solid black; border-radius:10px; color:black`"
-                        @click="selectedFace = 'o'"
-                      >
-                        O
-                      </button>
-                      <button
-                        class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color:white; height:70px; width:70px; border:2px solid black; border-radius:10px; color:black`"
-                        @click="selectedFace = 't'"
-                      >
-                        Trans
-                      </button>
+                        <button
+                          v-for="face in faces"
+                          :key="`facelet${face}`"
+                          class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
+                          :style="`background-color:${cubeState.sch[face]}; height:70px; width:70px; border:2px solid black; border-radius:10px; color:black`"
+                          @click="selectedFace = face"
+                        >
+                          {{ face.toUpperCase() }}
+                        </button>
+                        <button
+                          class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
+                          :style="`background-color:${cubeState.sch['n']}; height:70px; width:70px; border: 2px solid black; border-radius:10px; color:white`"
+                          @click="selectedFace = 'n'"
+                        >
+                          N
+                        </button>
+                        <button
+                          class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
+                          :style="`background-color:${cubeState.sch['o']}; height:70px; width:70px; border:2px solid black; border-radius:10px; color:black`"
+                          @click="selectedFace = 'o'"
+                        >
+                          O
+                        </button>
+                        <button
+                          class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
+                          :style="`background-color:white; height:70px; width:70px; border:2px solid black; border-radius:10px; color:black`"
+                          @click="selectedFace = 't'"
+                        >
+                          Trans
+                        </button>
+                      </div>
                     </div>
                   </div>
                   <div class="selectedColor">
