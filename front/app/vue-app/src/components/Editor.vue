@@ -252,5 +252,10 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
 }
 .faceletText {
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 100px;
+  padding: 5px;
+  box-shadow: 0 0 8px gray;
 }
 </style>
