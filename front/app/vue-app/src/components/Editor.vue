@@ -251,8 +251,8 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: center;
   width: 100%;
   align-items: center;
-  padding: 0;
-  margin: 5px;
+  padding: 5px;
+  margin: 0;
   opacity: 1;
   background-color: white;
   border-radius: 20px;
