@@ -412,7 +412,7 @@ import startpointFaceletButtons from "./startpointFaceletButtons.vue";
 import passFaceletButtons from "./passFaceletButtons.vue";
 import endpointFaceletButtons from "./endpointFaceletButtons.vue";
 import confirmation from "./confirmation.vue";
-import arrowOptions from "./ArrowOptions.vue";
+import arrowOptions from "../ArrowComponents/ArrowOptions.vue";
 import arrowStatus from "./ArrowStatus.vue";
 import { cubeState } from "../Stores/CubeState";
 import { ln } from "../Stores/Language";

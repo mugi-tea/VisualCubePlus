@@ -19,7 +19,7 @@
         </div>
         <div class="modal-body">
           <div class="container row">
-            <div class="arrowFacePreview col-lg-8 col-sm-12">
+            <div class="arrowFacePreview col-lg-7 col-sm-12">
               <h6>Choose facelet that the arrow passes.</h6>
               <div class="arrowFacelet d-flex justify-content-center">
                 <div
@@ -130,9 +130,9 @@
                 </div>
               </div>
             </div>
-            <div class="Options col-lg-4 col-sm-12">
-              <h6>Options</h6>
-              <div class="OptionList"></div>
+            <div class="Options col-lg-5 col-sm-12">
+              <ArrowOptions />
+              <ArrowStatus />
             </div>
           </div>
         </div>
@@ -187,7 +187,13 @@
 <script>
 import { cubeState } from "../Stores/CubeState";
 import { ln } from "../Stores/Language";
+import ArrowOptions from "./ArrowOptions.vue";
+import ArrowStatus from "./ArrowStatus.vue";
 export default {
+  components: {
+    ArrowOptions,
+    ArrowStatus,
+  },
   data() {
     return {
       cubeState: cubeState(),
