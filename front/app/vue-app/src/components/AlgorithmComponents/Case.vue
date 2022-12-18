@@ -166,12 +166,13 @@
                       :class="`${ollCase.label}Section bg-white`"
                       @click="cubeState.case = ollCase.alg"
                       data-bs-dismiss="modal"
+                      :style="`border: 2px solid ${themeColor.color}; border-radius: 5px`"
                     >
-                      <h6 class="ollLabel">{{ ollCase.label }}</h6>
+                      <h6 class="ollLabel text-black">{{ ollCase.label }}</h6>
                       <div class="ollImg">
                         <img
                           :src="`/img/oll/${ollCase.label}.svg`"
-                          style="height: 130px"
+                          style="height: 120px"
                         />
                       </div>
                     </button>
@@ -222,12 +223,13 @@
                       :class="`${pllCase.label}Section bg-white`"
                       @click="cubeState.case = pllCase.alg"
                       data-bs-dismiss="modal"
+                      :style="`border: 2px solid ${themeColor.color}; border-radius: 5px`"
                     >
-                      <h6 class="pllLabel">{{ pllCase.label }}</h6>
+                      <h6 class="pllLabel text-black">{{ pllCase.label }}</h6>
                       <div class="pllImg">
                         <img
                           :src="`/img/pll/${pllCase.label}.svg`"
-                          style="height: 130px"
+                          style="height: 120px"
                         />
                       </div>
                     </button>
@@ -254,11 +256,13 @@
 <script>
 import { ln } from "../Stores/Language";
 import { cubeState } from "../Stores/CubeState";
+import { themeColor } from "../Stores/ThemeColor";
 export default {
   data() {
     return {
       ln: ln(),
       cubeState: cubeState(),
+      themeColor: themeColor(),
       caseSingleLayer: ["U", "D", "R", "L", "F", "B"],
       caseDoubleLayer: ["u", "d", "r", "l", "f", "b"],
       caseMiddleLayer: ["M", "E", "S"],

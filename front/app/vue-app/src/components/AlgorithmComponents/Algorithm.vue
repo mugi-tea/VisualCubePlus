@@ -166,8 +166,9 @@
                       :class="`${ollAlg.label}Section bg-white`"
                       @click="cubeState.alg = ollAlg.alg"
                       data-bs-dismiss="modal"
+                      :style="`border: 2px solid ${themeColor.color}; border-radius: 5px`"
                     >
-                      <h6 class="ollLabel">{{ ollAlg.label }}</h6>
+                      <h6 class="ollLabel text-black">{{ ollAlg.label }}</h6>
                       <div class="ollImg">
                         <img
                           :src="`/img/oll/${ollAlg.label}.svg`"
@@ -223,12 +224,13 @@
                       :class="`${pllAlg.label}Section bg-white`"
                       @click="cubeState.alg = pllAlg.alg"
                       data-bs-dismiss="modal"
+                      :style="`border: 2px solid ${themeColor.color}; border-radius: 5px`"
                     >
-                      <h6 class="pllLabel">{{ pllAlg.label }}</h6>
+                      <h6 class="pllLabel text-black">{{ pllAlg.label }}</h6>
                       <div class="pllImg">
                         <img
                           :src="`/img/pll/${pllAlg.label}.svg`"
-                          style="height: 130px"
+                          style="height: 120px"
                         />
                       </div>
                     </button>
@@ -255,11 +257,13 @@
 <script>
 import { ln } from "../Stores/Language";
 import { cubeState } from "../Stores/CubeState";
+import { themeColor } from "../Stores/ThemeColor";
 export default {
   data() {
     return {
       ln: ln(),
       cubeState: cubeState(),
+      themeColor: themeColor(),
       algSingleLayer: ["U", "D", "R", "L", "F", "B"],
       algDoubleLayer: ["u", "d", "r", "l", "f", "b"],
       algMiddleLayer: ["M", "E", "S"],
