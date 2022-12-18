@@ -171,7 +171,7 @@
                       <div class="ollImg">
                         <img
                           :src="`/img/oll/${ollAlg.label}.svg`"
-                          style="height: 130px"
+                          style="height: 120px"
                         />
                       </div>
                     </button>
