@@ -249,8 +249,8 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
-  width: 80%;
+  height: 50%;
+  width: 100%;
   opacity: 1;
   background-color: white;
   border-radius: 20%;
