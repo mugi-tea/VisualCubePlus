@@ -252,9 +252,15 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
 }
 .faceletText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 80%;
+  width: 80%;
   background-color: white;
   border: 2px black solid;
-  border-radius: 100px;
+  border-radius: 20px;
   padding: 5px;
   box-shadow: 0 0 8px gray;
 }
