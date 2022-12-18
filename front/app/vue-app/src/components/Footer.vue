@@ -1,11 +1,12 @@
 <template>
   <footer>
-    <div class="container d-flex justify-content-center py-3">
-      <div class="col-4"></div>
-      <div class="col-4 d-flex justify-content-center text-white">
+    <div
+      class="container d-flex flex-column justify-content-between gap-1 py-3"
+    >
+      <div class="d-flex justify-content-center text-white">
         Visual Cube Plus ver4.0.0
       </div>
-      <div class="col-4 d-flex justify-content-end aling-items-center gap-2">
+      <div class="d-flex justify-content-center aling-items-center gap-2">
         <button
           class="languageJapanese"
           @click="ln.changeLanguage('jp')"
