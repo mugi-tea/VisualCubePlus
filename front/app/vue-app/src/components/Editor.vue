@@ -263,5 +263,6 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 20px;
   padding: 5px;
   box-shadow: 0 0 8px gray;
+  color: black;
 }
 </style>

@@ -7,9 +7,12 @@
             v-for="(arw, index) in cubeState.arw"
             :key="index"
             class="arrowListli mb-2"
+            :style="`border:2px solid ${themeColor.color}`"
           >
             <div class="px-2 pt-1 d-flex flex-column gap-2">
-              <div class="d-flex flex-row gap-3">
+              <div
+                class="d-flex flex-row justify-content-lg-start justify-content-sm-evenly gap-3"
+              >
                 <div class="fw-bold">
                   {{ ln.startpoint }}: {{ arw.startpoint }}
                 </div>
@@ -72,13 +75,14 @@
                   </option>
                 </select>
                 <input
+                  class="mt-1"
                   type="color"
                   v-model="cubeState.arw[index].color"
                   style="width: 100%; border: black"
                 />
               </div>
             </div>
-            <div class="d-flex align-items-center flex-column">
+            <div class="d-flex align-items-center flex-column mt-2">
               <button
                 class="deleteArrow button-primary"
                 @click="cubeState.arw.splice(index, 1)"
@@ -127,6 +131,7 @@
 <script>
 import { cubeState } from "../Stores/CubeState";
 import { ln } from "../Stores/Language";
+import { themeColor } from "../Stores/ThemeColor";
 import ChooseFace from "./ChooseFace.vue";
 import Startpoint from "./Startpoint.vue";
 import Pass from "./Pass.vue";
@@ -144,6 +149,7 @@ export default {
     return {
       cubeState: cubeState(),
       ln: ln(),
+      themeColor: themeColor(),
       faces: ["u", "l", "f", "r", "b", "d"],
       colors: [
         {
