@@ -170,13 +170,13 @@
                   <div class="fcColorOptions">
                     <h5>{{ ln.colorOptions }}</h5>
                     <div
-                      class="selectColorButtons d-flex justify-content-center flex-wrap"
+                      class="selectColorButtons d-flex justify-content-start flex-wrap"
                     >
                       <button
                         v-for="(color, index) in colors"
                         :key="`facelet${face}${index}`"
                         class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color: ${color.color}; height:70px; width:70px; color:${color.fontColor}`"
+                        :style="`background-color: ${color.color}; height:70px; width:70px; color:${color.fontColor}; border:black 2px solid; border-radius: 10px; color:black;`"
                         @click="selectedColor = color.value"
                       >
                         {{ color.label }}
@@ -189,7 +189,8 @@
                           height: 70px;
                           width: 70px;
                           border: black 2px solid !important;
-                          border-radius: 0px !important;
+                          border-radius: 10px !important;
+                          color: black;
                         "
                       />
                     </div>
@@ -198,7 +199,7 @@
                     <h5>{{ ln.selectedColor }}</h5>
 
                     <div
-                      :style="`background-color:${selectedColor}; height:70px; width:70px; border:2.5px solid black`"
+                      :style="`background-color:${selectedColor}; height:70px; width:70px; border:2px solid black; border-radius:10px`"
                     ></div>
                   </div>
                 </div>

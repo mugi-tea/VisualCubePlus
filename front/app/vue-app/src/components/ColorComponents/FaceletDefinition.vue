@@ -183,34 +183,34 @@
                   <div class="fdColorOptions">
                     <h5>{{ ln.colorOptions }}</h5>
                     <div
-                      class="selectColorButtons d-flex justify-content-center flex-wrap"
+                      class="selectColorButtons d-flex justify-content-start flex-wrap"
                     >
                       <button
                         v-for="face in faces"
                         :key="`facelet${face}`"
                         class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color:${cubeState.sch[face]}; height:70px; width:70px`"
+                        :style="`background-color:${cubeState.sch[face]}; height:70px; width:70px; border:2px solid black; border-radius:10px; color:black`"
                         @click="selectedFace = face"
                       >
                         {{ face.toUpperCase() }}
                       </button>
                       <button
                         class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color:${cubeState.sch['n']}; height:70px; width:70px`"
+                        :style="`background-color:${cubeState.sch['n']}; height:70px; width:70px; border: 2px solid black; border-radius:10px; color:white`"
                         @click="selectedFace = 'n'"
                       >
                         N
                       </button>
                       <button
                         class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color:${cubeState.sch['o']}; height:70px; width:70px`"
+                        :style="`background-color:${cubeState.sch['o']}; height:70px; width:70px; border:2px solid black; border-radius:10px; color:black`"
                         @click="selectedFace = 'o'"
                       >
                         O
                       </button>
                       <button
                         class="colorSelectButton m-1 d-flex justify-content-center fw-bold align-items-center"
-                        :style="`background-color:white; height:70px; width:70px;`"
+                        :style="`background-color:white; height:70px; width:70px; border:2px solid black; border-radius:10px; color:black`"
                         @click="selectedFace = 't'"
                       >
                         Trans
@@ -220,7 +220,7 @@
                   <div class="selectedColor">
                     <h5>{{ ln.selectedColor }}</h5>
                     <div
-                      :style="`background-color:${cubeState.sch[selectedFace]}; height:70px; width:70px;border:2.5px solid black`"
+                      :style="`background-color:${cubeState.sch[selectedFace]}; height:70px; width:70px;border:2.5px solid black; border:black 2px solid; border-radius: 10px`"
                     ></div>
                   </div>
                   <div
