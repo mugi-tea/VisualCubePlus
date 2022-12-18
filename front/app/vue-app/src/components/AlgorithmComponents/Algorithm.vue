@@ -163,7 +163,7 @@
                     :key="ollAlg.label"
                   >
                     <button
-                      :class="`${ollAlg.label}Section bg-white`"
+                      :class="`${ollAlg.label}Section bg-white `"
                       @click="cubeState.alg = ollAlg.alg"
                       data-bs-dismiss="modal"
                       :style="`border: 2px solid ${themeColor.color}; border-radius: 5px`"
@@ -586,9 +586,11 @@ export default {
 
 <style>
 .ollLabel {
+  padding-top: 7px;
   color: black !important;
 }
-.pllLabe {
+.pllLabel {
+  padding-top: 7px;
   color: black !important;
 }
 </style>
