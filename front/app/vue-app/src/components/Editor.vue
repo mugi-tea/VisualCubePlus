@@ -247,6 +247,7 @@ input[type="range"]::-webkit-slider-thumb {
 /*arwのfaceletのやつ*/
 .faceletText {
   display: flex;
+  font-size: 1rem;
   justify-content: center;
   align-items: center;
   padding: 5px;
