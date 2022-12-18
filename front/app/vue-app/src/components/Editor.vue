@@ -258,13 +258,13 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 20px;
   font-weight: bold;
   color: black;
-  border: solid 3px black;
+  border: solid 2px black;
   box-shadow: 0 0 8px gray;
 }
 
 @media screen and (max-width: 992px) {
   .faceletText {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 </style>
