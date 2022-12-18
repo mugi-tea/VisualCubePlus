@@ -249,11 +249,10 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
-  width: 100%;
+  padding: 5px;
   opacity: 1;
   background-color: white;
-  border-radius: 20%;
+  border-radius: 20px;
   font-weight: bold;
   color: black;
   border: solid 3px black;
