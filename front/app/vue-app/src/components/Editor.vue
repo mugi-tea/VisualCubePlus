@@ -245,6 +245,12 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /*arwのfaceletのやつ*/
+.arrowFaceletButton {
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
 .faceletText {
 }
 </style>
