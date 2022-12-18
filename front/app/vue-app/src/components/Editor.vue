@@ -252,7 +252,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 100%;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 5px;
   opacity: 1;
   background-color: white;
   border-radius: 20px;
