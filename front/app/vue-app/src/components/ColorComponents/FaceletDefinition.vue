@@ -173,7 +173,7 @@
                           100 / cubeState.pzl
                         )}%; height:${Math.floor(
                           100 / cubeState.pzl
-                        )}%; border:solid black 2px !important; border-radius:3px !important;`"
+                        )}%; border:solid black 2px !important; border-radius:3px !important; cursor: pointer; outline: none; padding: 0; appearance: none;`"
                         @click="cubeState.fd[face][index] = selectedFace"
                       ></button>
                     </div>
