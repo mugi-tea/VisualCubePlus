@@ -263,7 +263,7 @@ export default {
       cubeState: cubeState(),
       themeColor: themeColor(),
       caseSingleLayer: ["U", "D", "R", "L", "F", "B"],
-      caseDoubleLayer: ["u", "d", "r", "l", "f", "b"],
+      caseDoubleLayer: ["Uw", "Dw", "Rw", "Lw", "Fw", "Bw"],
       caseMiddleLayer: ["M", "E", "S"],
       caseRotation: ["x", "y", "z"],
       caseDirection: ["'", "2"],

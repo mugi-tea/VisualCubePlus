@@ -264,7 +264,7 @@ export default {
       cubeState: cubeState(),
       themeColor: themeColor(),
       algSingleLayer: ["U", "D", "R", "L", "F", "B"],
-      algDoubleLayer: ["u", "d", "r", "l", "f", "b"],
+      algDoubleLayer: ["Uw", "Dw", "Rw", "Lw", "Fw", "Bw"],
       algMiddleLayer: ["M", "E", "S"],
       algRotation: ["x", "y", "z"],
       algDirection: ["'", "2"],
