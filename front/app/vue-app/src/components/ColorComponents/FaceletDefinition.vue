@@ -158,7 +158,7 @@
                   <div class="d-flex justify-content-center align-items-center">
                     <div
                       class="d-flex flex-wrap overflow-hidden"
-                      style="width: 200px; height: 200px"
+                      style="width: 300px; height: 300px"
                     >
                       <button
                         class="faceletColorSelect"

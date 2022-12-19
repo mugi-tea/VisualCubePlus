@@ -145,9 +145,7 @@
                   <div class="d-flex justify-content-center align-items-center">
                     <div
                       class="d-flex flex-wrap overflow-hidden"
-                      :style="`width: ${300 - cubeState.pzl * 5}px; height: ${
-                        300 - cubeState.pzl * 5
-                      }px`"
+                      style="width: 300px; height: 300px"
                     >
                       <button
                         class="faceletColorSelect"
@@ -162,7 +160,7 @@
                           100 / cubeState.pzl
                         )}%; height:${Math.floor(
                           100 / cubeState.pzl
-                        )}%; border:solid black 2px !important; border-radius:3px !important`"
+                        )}%; border:solid black 2px !important; border-radius:3px !important; cursor: pointer; outline: none; padding: 0; appearance: none;`"
                         @click="cubeState.fc[face][index] = selectedColor"
                       ></button>
                     </div>
