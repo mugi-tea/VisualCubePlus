@@ -157,7 +157,7 @@
                   <h5>{{ ln.facelet }}</h5>
                   <div class="d-flex justify-content-center align-items-center">
                     <div
-                      class="d-flex flex-wrap overflow-hidden"
+                      class="d-flex flex-wrap"
                       style="width: 400px; height: 400px"
                     >
                       <button
