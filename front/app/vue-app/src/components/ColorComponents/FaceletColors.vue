@@ -157,10 +157,10 @@
                         :style="`background-color:${
                           cubeState.fc[face][index]
                         }; width:${Math.floor(
-                          300 / cubeState.pzl
-                        )}px; height:${Math.floor(
-                          300 / cubeState.pzl
-                        )}px; border:solid black 2px !important; border-radius:3px !important`"
+                          100 / cubeState.pzl
+                        )}%; height:${Math.floor(
+                          100 / cubeState.pzl
+                        )}%; border:solid black 2px !important; border-radius:3px !important`"
                         @click="cubeState.fc[face][index] = selectedColor"
                       ></button>
                     </div>
