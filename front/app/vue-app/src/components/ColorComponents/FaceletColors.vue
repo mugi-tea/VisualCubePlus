@@ -145,7 +145,9 @@
                   <div class="d-flex justify-content-center align-items-center">
                     <div
                       class="d-flex flex-wrap overflow-hidden"
-                      style="width: 300px; height: 300px"
+                      :style="`width: ${300 - cubeState.pzl * 5}px; height: ${
+                        300 - cubeState.pzl * 5
+                      }px`"
                     >
                       <button
                         class="faceletColorSelect"
