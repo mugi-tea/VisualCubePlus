@@ -157,8 +157,8 @@
                   <h5>{{ ln.facelet }}</h5>
                   <div class="d-flex justify-content-center align-items-center">
                     <div
-                      class="d-flex flex-wrap"
-                      style="width: 400px; height: 400px"
+                      class="d-flex flex-wrap overflow-hidden"
+                      style="width: 200px; height: 200px"
                     >
                       <button
                         class="faceletColorSelect"
