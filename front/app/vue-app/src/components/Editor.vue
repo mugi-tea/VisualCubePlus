@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="previewSection col-lg-6 pb-3">
-          <h2 class="sectionTitle">{{ ln.preview }}</h2>
+          <h2 class="sectionTitle" style="z-index: 10">{{ ln.preview }}</h2>
           <Preview />
         </div>
         <div class="editorSections col-lg-6 pb-3">
