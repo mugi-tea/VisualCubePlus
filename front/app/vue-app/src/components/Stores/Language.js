@@ -1,5 +1,4 @@
 import { defineStore } from "pinia";
-import { setTransitionHooks } from "vue";
 
 export const ln = defineStore("ln", {
   state: () => ({
@@ -178,13 +177,13 @@ export const ln = defineStore("ln", {
         this.faceletDefinitionNote = "色の選択肢は配色の設定に依存します。";
         this.faceletColors = "ステッカー詳細設定";
         this.faceletColorsNote =
-          "ステッカー設定とステッカー色の両方が定義されているとき、ステッカー設定が優先して反映されます。";
+          "ステッカー設定とステッカー詳細設定の両方が定義されているとき、ステッカー設定が優先して反映されます。";
         this.scheme = "配色設定";
         this.cubeColor = "キューブの色";
         this.backgroundColor = "背景色";
         this.chooseFace = "面を選択してください";
         this.algorithm = "手順";
-        this.algToApply = "手順";
+        this.algToApply = "正手順";
         this.algToSolve = "逆手順";
         this.rotation = "回転";
         this.arrow = "矢印";
@@ -246,9 +245,6 @@ export const ln = defineStore("ln", {
         this.facelet = "ステッカー";
         this.others = "その他";
       }
-    },
-    consoleHOGE() {
-      console.log("hoge");
     },
   },
 });
