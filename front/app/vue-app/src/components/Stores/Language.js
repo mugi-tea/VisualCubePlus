@@ -65,6 +65,7 @@ export const ln = defineStore("ln", {
     arrowPassNote: "Choose facelet that the arrow passes.",
     arrowEndpointNote: "Choose Facelet that the arrow ends.",
     arrowConfirmationNote: "Are you sure to add the arrow?",
+    howtouse: "How to use",
 
     delete: "Delete",
     deleteAll: "Delete All",
@@ -150,6 +151,7 @@ export const ln = defineStore("ln", {
         this.arrowPassNote = "Choose facelet that the arrow passes.";
         this.arrowEndpointNote = "Choose Facelet that the arrow ends.";
         this.arrowConfirmationNote = "Are you sure to add the arrow?";
+        this.howtouse = "How to use";
 
         this.delete = "Delete";
         this.deleteAll = "Delete All";
@@ -229,6 +231,7 @@ export const ln = defineStore("ln", {
         this.arrowPassNote = "通過点を選択してください。";
         this.arrowEndpointNote = "終点を選択してください。";
         this.arrowConfirmationNote = "この矢印を追加しますか？";
+        this.howtouse = "使い方";
 
         this.delete = "削除";
         this.deleteAll = "全削除";
