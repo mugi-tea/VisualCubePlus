@@ -9,7 +9,7 @@
     >
       {{ ln.import }}
       <h5 class="d-flex pt-2">
-        <i class="bx bx-download"></i>
+        <i class="bx bx-upload"></i>
       </h5>
     </button>
     <button
@@ -20,7 +20,7 @@
     >
       {{ ln.save }}
       <h5 class="d-flex pt-2">
-        <i class="bx bx-upload"></i>
+        <i class="bx bx-download"></i>
       </h5>
     </button>
   </div>

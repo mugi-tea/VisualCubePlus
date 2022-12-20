@@ -1,7 +1,6 @@
 <template>
   <div class="scheme">
-    <h6 class="carouselTitle">{{ ln.chooseFace }}</h6>
-    <div class="schemeEdit">
+    <div class="schemeEdit pt-3">
       <div class="d-flex flex-column justify-content-center align-items-center">
         <div class="faces d-flex flex-row">
           <div class="emptyFace schemeFace"></div>
@@ -148,7 +147,7 @@
           (cubeState.sch.b = '#00d800')
       "
     >
-      {{ln.reset}}
+      {{ ln.reset }}
     </button>
   </div>
 </template>

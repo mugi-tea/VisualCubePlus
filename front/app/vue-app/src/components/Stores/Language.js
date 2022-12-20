@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+import { setTransitionHooks } from "vue";
 
 export const ln = defineStore("ln", {
   state: () => ({
@@ -49,7 +50,7 @@ export const ln = defineStore("ln", {
     importFromSavedSettings: "Import From Saved Settings",
     saveSettings: "Save Settings",
     savedSettings: "Saved Settings",
-    preview: "Preview",
+    preview: "Image",
     editor: "Editor",
     name: "Name",
     warning: "Warning",
@@ -72,6 +73,7 @@ export const ln = defineStore("ln", {
     yes: "Yes",
     no: "No",
     facelet: "Facelet",
+    others: "Others",
   }),
   actions: {
     changeLanguage(ln) {
@@ -123,7 +125,7 @@ export const ln = defineStore("ln", {
         this.importFromSavedSettings = "Import From Saved Settings";
         this.saveSettings = "Save Settings";
         this.savedSettings = "Saved Settings";
-        this.preview = "Preview";
+        this.preview = "Image";
         this.editor = "Editor";
         this.name = "Name";
         this.warning = "Warning";
@@ -147,6 +149,7 @@ export const ln = defineStore("ln", {
         this.yes = "Yes";
         this.no = "No";
         this.facelet = "Facelet";
+        this.others = "Others";
       }
       if (ln == "jp") {
         this.puzzle = "キューブ";
@@ -155,12 +158,13 @@ export const ln = defineStore("ln", {
         this.stage = "ステージ";
         this.rotation = "回転";
         this.color = "色";
+
         this.faceletDefinition = "ステッカー設定";
         this.faceletDefinitionNote = "色の選択肢は配色の設定に依存します。";
-        this.faceletColors = "ステッカー色";
+        this.faceletColors = "ステッカー詳細設定";
         this.faceletColorsNote =
           "ステッカー設定とステッカー色の両方が定義されているとき、ステッカー設定が優先して反映されます。";
-        this.scheme = "配色";
+        this.scheme = "配色設定";
         this.cubeColor = "キューブの色";
         this.backgroundColor = "背景色";
         this.chooseFace = "面を選択してください";
@@ -194,7 +198,7 @@ export const ln = defineStore("ln", {
         this.importFromSavedSettings = "設定をインポート";
         this.saveSettings = "設定を保存";
         this.savedSettings = "保存した設定";
-        this.preview = "プレビュー";
+        this.preview = "画像";
         this.editor = "設定";
         this.name = "名前";
         this.warning = "注意";
@@ -219,6 +223,7 @@ export const ln = defineStore("ln", {
         this.yes = "はい";
         this.no = "いいえ";
         this.facelet = "ステッカー";
+        this.others = "その他";
       }
     },
     consoleHOGE() {

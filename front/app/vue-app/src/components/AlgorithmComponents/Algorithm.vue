@@ -39,7 +39,7 @@
             {{ algSL }}
           </button>
         </div>
-        <div class="btn-group" role="group  v-if=" cubeState.pzl>
+        <div class="btn-group" role="group" v-if="cubeState.pzl >= 4">
           <button
             v-for="algDL in algDoubleLayer"
             :class="`${algDL}Button btn button-secondly`"
