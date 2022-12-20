@@ -45,7 +45,7 @@ export const ln = defineStore("ln", {
     cubeOpacity: "Cube Opacity",
     image: "Image",
     projectionDistance: "Projection Distance",
-    size: "Size",
+    size: "Size (px)",
     format: "Format",
     importFromSavedSettings: "Import From Saved Settings",
     saveSettings: "Save Settings",
@@ -126,7 +126,7 @@ export const ln = defineStore("ln", {
         this.cubeOpacity = "Cube Opacity";
         this.image = "Image";
         this.projectionDistance = "Projection Distance";
-        this.size = "Size";
+        this.size = "Size (px)";
         this.format = "Format";
         this.importFromSavedSettings = "Import From Saved Settings";
         this.saveSettings = "Save Settings";
@@ -208,7 +208,7 @@ export const ln = defineStore("ln", {
         this.faceletOpacity = "ステッカーの透明度";
         this.cubeOpacity = "キューブの透明度";
         this.projectionDistance = "描画距離";
-        this.size = "サイズ";
+        this.size = "サイズ (px)";
         this.format = "ファイル形式";
         this.importFromSavedSettings = "設定をインポート";
         this.saveSettings = "設定を保存";
