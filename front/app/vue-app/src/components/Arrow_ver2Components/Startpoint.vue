@@ -236,6 +236,14 @@ export default {
   background-color: black;
 }
 
+.arrowFaceletButton {
+  transition: all ease 0.2s;
+}
+
+.arrowFaceletButton:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 992px) {
   .arrowFaceletButtons {
     height: 40vw !important;
