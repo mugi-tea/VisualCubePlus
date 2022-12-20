@@ -353,6 +353,11 @@ export default {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition: ease all 0.2s;
+}
+
+.fcFace:hover {
+  transform: scale(1.1);
 }
 
 .fcFacelet {

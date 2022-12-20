@@ -10,7 +10,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" :id="`${face}FaceStartpointModal`">
-            Startpoint
+            {{ ln.arrowSetting }}
           </h5>
           <button
             type="button"
@@ -22,7 +22,7 @@
         <div class="modal-body">
           <div class="container row">
             <div class="arrowFacePreview col-lg-7 col-sm-12">
-              <h6>Choose Facelet that the arrow starts from.</h6>
+              <h6>{{ ln.arrowStartpointNote }}</h6>
               <div class="arrowFacelet d-flex justify-content-center">
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"

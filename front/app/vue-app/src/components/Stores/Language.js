@@ -60,6 +60,12 @@ export const ln = defineStore("ln", {
     colorOptions: "Color Options",
     selectedColor: "Selected Color",
     arrowModalNote: "Startpoint, Pass, and Endpoint have to be on same face.",
+    arrowSetting: "Arrow Setting",
+    arrowChooseFaceNote: "Choose the face that you want to add arrow on.",
+    arrowStartpointNote: "Choose the facelet that the arrow starts from.",
+    arrowPassNote: "Choose facelet that the arrow passes.",
+    arrowEndpointNote: "Choose Facelet that the arrow ends.",
+    arrowConfirmationNote: "Are you sure to add the arrow?",
 
     delete: "Delete",
     deleteAll: "Delete All",
@@ -135,9 +141,18 @@ export const ln = defineStore("ln", {
         this.generateImage = "Generate Image";
         this.colorOptions = "Color Options";
         this.selectedColor = "Selected Color";
-        (this.arrowModalNote =
-          "Startpoint, Pass, and Endpoint have to be on same face."),
-          (this.delete = "Delete");
+        this.arrowModalNote =
+          "Startpoint, Pass, and Endpoint have to be on same face.";
+        this.arrowSetting = "Arrow Setting";
+        this.arrowChooseFaceNote =
+          "Choose the face that you want to add arrow on.";
+        this.arrowStartpointNote =
+          "Choose the facelet that the arrow starts from.";
+        this.arrowPassNote = "Choose facelet that the arrow passes.";
+        this.arrowEndpointNote = "Choose Facelet that the arrow ends.";
+        this.arrowConfirmationNote = "Are you sure to add the arrow?";
+
+        this.delete = "Delete";
         this.deleteAll = "Delete All";
         this.reset = "Reset";
         this.resetAll = "Reset All";
@@ -209,6 +224,12 @@ export const ln = defineStore("ln", {
         this.selectedColor = "選択中の色";
         this.arrowModalNote =
           "スタートポイント、パス、エンドポイントは同じ面で選択してください。";
+        this.arrowSetting = "矢印設定";
+        this.arrowChooseFaceNote = "矢印を追加する面を選択してください。";
+        this.arrowStartpointNote = "始点を選択してください。";
+        this.arrowPassNote = "通過点を選択してください。";
+        this.arrowEndpointNote = "終点を選択してください。";
+        this.arrowConfirmationNote = "この矢印を追加しますか？";
 
         this.delete = "削除";
         this.deleteAll = "全削除";
