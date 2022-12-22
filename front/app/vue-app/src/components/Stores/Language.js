@@ -49,7 +49,7 @@ export const ln = defineStore("ln", {
     importFromSavedSettings: "Import From Saved Settings",
     saveSettings: "Save Settings",
     savedSettings: "Saved Settings",
-    preview: "Preview",
+    preview: "Image",
     editor: "Editor",
     name: "Name",
     warning: "Warning",
@@ -123,7 +123,7 @@ export const ln = defineStore("ln", {
         this.importFromSavedSettings = "Import From Saved Settings";
         this.saveSettings = "Save Settings";
         this.savedSettings = "Saved Settings";
-        this.preview = "Preview";
+        this.preview = "Image";
         this.editor = "Editor";
         this.name = "Name";
         this.warning = "Warning";
@@ -194,7 +194,7 @@ export const ln = defineStore("ln", {
         this.importFromSavedSettings = "設定をインポート";
         this.saveSettings = "設定を保存";
         this.savedSettings = "保存した設定";
-        this.preview = "プレビュー";
+        this.preview = "画像";
         this.editor = "設定";
         this.name = "名前";
         this.warning = "注意";

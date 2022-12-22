@@ -193,7 +193,7 @@ export default {
           date: {
             year: this.today.getFullYear(),
             month: this.today.getMonth() + 1,
-            day: this.today.getDay(),
+            day: this.today.getDate(),
             time: this.outputHours(
               this.today.getHours(),
               this.today.getMinutes()
