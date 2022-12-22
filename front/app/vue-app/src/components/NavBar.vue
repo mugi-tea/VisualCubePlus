@@ -8,9 +8,9 @@
         <i class="bx bx-customize pe-2 fs-1"></i>
         <div class="title fs-3">Visual Cube Plus</div>
       </a>
-      <!--
+
       <button
-        onclick="location.href='https://mugiajinoocha.hatenablog.com/draft/entry/8uWwwrnP2H5V608oZ5FQQL-K_0Y'"
+        onclick="location.href='https://mugiajinoocha.hatenablog.com/entry/2022/12/22/221543'"
         type="button"
         class="btn howtousebutton text-white"
         data-bs-toggle="tooltip"
@@ -19,7 +19,7 @@
       >
         {{ ln.howtouse }}
       </button>
-    --></div>
+    </div>
   </nav>
 </template>
 
