@@ -9,7 +9,9 @@
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="chooseFaceModalLabel">Choose Face</h5>
+          <h5 class="modal-title" id="chooseFaceModalLabel">
+            {{ ln.arrowSetting }}
+          </h5>
           <button
             type="button"
             class="btn-close"
@@ -18,7 +20,7 @@
           ></button>
         </div>
         <div class="modal-body d-flex flex-column">
-          <h6>Choose face that you want to add arrow on.</h6>
+          <h6>{{ ln.arrowChooseFaceNote }}</h6>
           <div class="d-flex justify-content-center">
             <div class="faceSelectButtons">
               <div class="d-flex">

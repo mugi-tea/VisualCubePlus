@@ -303,6 +303,11 @@ export default {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition: ease all 0.2s;
+}
+
+.fdFace:hover {
+  transform: scale(1.1);
 }
 
 .fdFacelet {

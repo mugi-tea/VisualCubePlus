@@ -42,7 +42,7 @@
           @click="active2"
           style="width: 25%"
         >
-          <h6>{{ ln.faceletColors }}</h6>
+          <h6>{{ ln.scheme }}</h6>
         </button>
         <button
           :class="{ sectionSelectButton: true, active: isActive3 }"
@@ -54,7 +54,7 @@
           @click="active3"
           style="width: 25%"
         >
-          <h6>{{ ln.scheme }}</h6>
+          <h6>{{ ln.faceletColors }}</h6>
         </button>
         <button
           :class="{ sectionSelectButton: true, active: isActive4 }"
@@ -66,7 +66,7 @@
           @click="active4"
           style="width: 25%"
         >
-          <h6>{{ ln.color }}</h6>
+          <h6>{{ ln.others }}</h6>
         </button>
       </div>
       <div class="carousel-inner">
@@ -74,10 +74,10 @@
           <FaceletDefinition />
         </div>
         <div class="carousel-item">
-          <FaceletColors />
+          <Scheme />
         </div>
         <div class="carousel-item">
-          <Scheme />
+          <FaceletColors />
         </div>
         <div class="carousel-item">
           <CubeColor class="pb-2" />

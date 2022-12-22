@@ -3,14 +3,13 @@
     <!--
     <img class="previewImg" :src="previewImgSrc" alt="#" style="width: 70%" />
     -->
-    <div id="visualCube" class="previewImage" style="z-index: -10"></div>
+    <div id="visualCube" class="previewImage"></div>
   </div>
 </template>
 
 <script>
 import { cubeState } from "./Stores/CubeState";
 import { cubePNG, Face, Axis } from "sr-visualizer";
-import { registerRuntimeHelpers } from "@vue/compiler-core";
 export default {
   data() {
     return {

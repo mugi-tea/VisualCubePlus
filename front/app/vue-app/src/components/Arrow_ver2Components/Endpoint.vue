@@ -9,7 +9,9 @@
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" :id="`${face}FaceEndpointModal`">Endpoint</h5>
+          <h5 class="modal-title" :id="`${face}FaceEndpointModal`">
+            {{ ln.arrowSetting }}
+          </h5>
           <button
             type="button"
             class="btn-close"
@@ -20,7 +22,7 @@
         <div class="modal-body">
           <div class="container row">
             <div class="arrowFacePreview col-lg-7 col-sm-12">
-              <h6>Choose Facelet that the arrow ends.</h6>
+              <h6>{{ ln.arrowEndpointNote }}</h6>
               <div class="arrowFacelet d-flex justify-content-center">
                 <div
                   class="arrowFaceletButtons d-flex flex-wrap justify-content-evenly align-items-center"

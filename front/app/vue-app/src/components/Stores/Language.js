@@ -44,7 +44,7 @@ export const ln = defineStore("ln", {
     cubeOpacity: "Cube Opacity",
     image: "Image",
     projectionDistance: "Projection Distance",
-    size: "Size",
+    size: "Size (px)",
     format: "Format",
     importFromSavedSettings: "Import From Saved Settings",
     saveSettings: "Save Settings",
@@ -59,6 +59,13 @@ export const ln = defineStore("ln", {
     colorOptions: "Color Options",
     selectedColor: "Selected Color",
     arrowModalNote: "Startpoint, Pass, and Endpoint have to be on same face.",
+    arrowSetting: "Arrow Setting",
+    arrowChooseFaceNote: "Choose the face that you want to add arrow on.",
+    arrowStartpointNote: "Choose the facelet that the arrow starts from.",
+    arrowPassNote: "Choose facelet that the arrow passes.",
+    arrowEndpointNote: "Choose Facelet that the arrow ends.",
+    arrowConfirmationNote: "Are you sure to add the arrow?",
+    howtouse: "How to use",
 
     delete: "Delete",
     deleteAll: "Delete All",
@@ -72,6 +79,7 @@ export const ln = defineStore("ln", {
     yes: "Yes",
     no: "No",
     facelet: "Facelet",
+    others: "Others",
   }),
   actions: {
     changeLanguage(ln) {
@@ -118,7 +126,7 @@ export const ln = defineStore("ln", {
         this.cubeOpacity = "Cube Opacity";
         this.image = "Image";
         this.projectionDistance = "Projection Distance";
-        this.size = "Size";
+        this.size = "Size (px)";
         this.format = "Format";
         this.importFromSavedSettings = "Import From Saved Settings";
         this.saveSettings = "Save Settings";
@@ -133,9 +141,19 @@ export const ln = defineStore("ln", {
         this.generateImage = "Generate Image";
         this.colorOptions = "Color Options";
         this.selectedColor = "Selected Color";
-        (this.arrowModalNote =
-          "Startpoint, Pass, and Endpoint have to be on same face."),
-          (this.delete = "Delete");
+        this.arrowModalNote =
+          "Startpoint, Pass, and Endpoint have to be on same face.";
+        this.arrowSetting = "Arrow Setting";
+        this.arrowChooseFaceNote =
+          "Choose the face that you want to add arrow on.";
+        this.arrowStartpointNote =
+          "Choose the facelet that the arrow starts from.";
+        this.arrowPassNote = "Choose facelet that the arrow passes.";
+        this.arrowEndpointNote = "Choose Facelet that the arrow ends.";
+        this.arrowConfirmationNote = "Are you sure to add the arrow?";
+        this.howtouse = "How to use";
+
+        this.delete = "Delete";
         this.deleteAll = "Delete All";
         this.reset = "Reset";
         this.resetAll = "Reset All";
@@ -147,6 +165,7 @@ export const ln = defineStore("ln", {
         this.yes = "Yes";
         this.no = "No";
         this.facelet = "Facelet";
+        this.others = "Others";
       }
       if (ln == "jp") {
         this.puzzle = "キューブ";
@@ -155,17 +174,18 @@ export const ln = defineStore("ln", {
         this.stage = "ステージ";
         this.rotation = "回転";
         this.color = "色";
+
         this.faceletDefinition = "ステッカー設定";
         this.faceletDefinitionNote = "色の選択肢は配色の設定に依存します。";
-        this.faceletColors = "ステッカー色";
+        this.faceletColors = "ステッカー詳細設定";
         this.faceletColorsNote =
-          "ステッカー設定とステッカー色の両方が定義されているとき、ステッカー設定が優先して反映されます。";
-        this.scheme = "配色";
+          "ステッカー設定とステッカー詳細設定の両方が定義されているとき、ステッカー設定が優先して反映されます。";
+        this.scheme = "配色設定";
         this.cubeColor = "キューブの色";
         this.backgroundColor = "背景色";
         this.chooseFace = "面を選択してください";
         this.algorithm = "手順";
-        this.algToApply = "手順";
+        this.algToApply = "正手順";
         this.algToSolve = "逆手順";
         this.rotation = "回転";
         this.arrow = "矢印";
@@ -186,10 +206,10 @@ export const ln = defineStore("ln", {
         this.influence = "曲がり具合";
         this.currentArrowStatus = "ステータス";
         this.opacity = "透明度";
-        this.faceletOpacity = "面の透明度";
-        this.cubeOpacity = "素体の透明度";
+        this.faceletOpacity = "ステッカーの透明度";
+        this.cubeOpacity = "キューブの透明度";
         this.projectionDistance = "描画距離";
-        this.size = "サイズ";
+        this.size = "サイズ (px)";
         this.format = "ファイル形式";
         this.importFromSavedSettings = "設定をインポート";
         this.saveSettings = "設定を保存";
@@ -205,6 +225,13 @@ export const ln = defineStore("ln", {
         this.selectedColor = "選択中の色";
         this.arrowModalNote =
           "スタートポイント、パス、エンドポイントは同じ面で選択してください。";
+        this.arrowSetting = "矢印設定";
+        this.arrowChooseFaceNote = "矢印を追加する面を選択してください。";
+        this.arrowStartpointNote = "始点を選択してください。";
+        this.arrowPassNote = "通過点を選択してください。";
+        this.arrowEndpointNote = "終点を選択してください。";
+        this.arrowConfirmationNote = "この矢印を追加しますか？";
+        this.howtouse = "使い方";
 
         this.delete = "削除";
         this.deleteAll = "全削除";
@@ -219,10 +246,8 @@ export const ln = defineStore("ln", {
         this.yes = "はい";
         this.no = "いいえ";
         this.facelet = "ステッカー";
+        this.others = "その他";
       }
-    },
-    consoleHOGE() {
-      console.log("hoge");
     },
   },
 });

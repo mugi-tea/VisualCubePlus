@@ -39,7 +39,7 @@
             {{ caseSL }}
           </button>
         </div>
-        <div class="btn-group" role="group">
+        <div class="btn-group" role="group" v-if="cubeState.pzl >= 4">
           <button
             v-for="caseDL in caseDoubleLayer"
             :class="`${caseDL}Button btn button-secondly`"

@@ -8,7 +8,18 @@
         <i class="bx bx-customize pe-2 fs-1"></i>
         <div class="title fs-3">Visual Cube Plus</div>
       </a>
-    </div>
+      <!--
+      <button
+        onclick="location.href='https://mugiajinoocha.hatenablog.com/draft/entry/8uWwwrnP2H5V608oZ5FQQL-K_0Y'"
+        type="button"
+        class="btn howtousebutton text-white"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Only Japanese available"
+      >
+        {{ ln.howtouse }}
+      </button>
+    --></div>
   </nav>
 </template>
 
@@ -30,5 +41,15 @@ export default {
 <style>
 .navbar {
   background-color: v-bind("themeColor.color");
+}
+
+.howtousebutton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  text-decoration: underline;
 }
 </style>
