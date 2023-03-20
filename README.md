@@ -1,3 +1,3 @@
 # VisualCubePlus
 
-visit visualcubeplus.com
+visit https://visualcubeplus.com
